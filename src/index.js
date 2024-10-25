@@ -1,6 +1,5 @@
 import './styles.css'; 
 
-const API_key = "SVXQ7TQNLTGCERACXMDS5DMKU";
 
 async function getWeather(place) {
   try {
