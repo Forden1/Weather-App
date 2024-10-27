@@ -5,21 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+
 </head>
 <body>
     <div class="wrapper">
-    <nav>
-       <p class="weather-title"> Weathering with you</p>
-    </nav>
-    <div class="search">
-        <form  action="#" method="GET"> <!-- Use a form element -->
-            <input id="search-box" autocomplete="off" type="text" placeholder="Search for weather">
-            <button type="submit">Search</button> <!-- Submit button -->
-        </form>
-    </div>
-    <div class="main-display">
+        <nav>
+        <p class="weather-title"> Weathering with you</p>
         
-    </div>
+        </nav>
+        <div class="search">
+            <form  action="#" method="GET"> <!-- Use a form element -->
+                <div class="sas">
+                    <input id="search-box" autocomplete="off" type="text" placeholder="Search for weather">
+                    <div id="suggestions"></div>
+                </div>
+                <button type="submit">Search</button> <!-- Submit button -->
+            </form>
+        </div>
+        <div class="main-con">
+            <div class="main-display"></div>
+            <div class="gap-div"></div>
+            <div class="alldays-div"></div>
+        </div>
+       
     </div>
 </body>
 </html>

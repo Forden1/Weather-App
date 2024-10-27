@@ -1,12 +1,31 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 .wrapper{
     display: flex;
     flex-direction: column;
     gap:80px;
 }
+form{
+    display: flex;
+    gap:10px
+}
+#suggestions {
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: aliceblue;
+  }
+  .suggestion {
+    padding: 8px;
+    cursor: pointer;
+
+  }
+  .suggestion:hover {
+    background-color: #f0f0f0;
+  }
 nav{
    
     position: sticky;
@@ -48,3 +67,31 @@ body{
     max-width: 300px;
     justify-content: center;
 }
+.main-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+.alldays-div{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    justify-content: space-between;
+    border-radius: 1.3%;
+    gap: 3rem;
+}
+.day{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    flex: 1;
+    padding: 1rem;
+}
+.date, .avg,.min,.max,.conditions,.icon {
+    flex: 1;
+    text-align: center;
+  }
